@@ -28,6 +28,6 @@ RUN mkdir build && cd build && \
     cd ../.. && \
     rm -rf /mozjpeg
 
-
+COPY . .
 # 安装 Python 依赖
 RUN pip3 install --no-cache-dir -r requirements.txt
