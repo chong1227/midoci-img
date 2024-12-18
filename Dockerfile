@@ -13,7 +13,9 @@ RUN apt-get update && \
         libtool \
         nasm \
         wget \
-        git && \
+        git \
+        pkg-config \
+        libpng-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # 克隆并安装 mozjpeg
